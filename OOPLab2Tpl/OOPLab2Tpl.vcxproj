@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2.cpp" />
     <ClCompile Include="Examples.cpp" />
     <ClCompile Include="Tasks.cpp" />
     <ClCompile Include="OOPLab2Tpl.cpp" />
