@@ -1,38 +1,23 @@
-﻿// OOPLab2Tpl.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
+﻿#include <iostream>
 
-#include <iostream>
-using namespace std;
-#include "Tasks.h"
-#include "Examples.h"
+int main() {
+    int a, b, c, d;
 
+    // Введення значень a, b, c, d
+    std::cout << "Enter a value a: ";
+    std::cin >> a;
+    std::cout << "Enter a value b: ";
+    std::cin >> b;
+    std::cout << "Enter a value c: ";
+    std::cin >> c;
+    std::cout << "Enter a value d: ";
+    std::cin >> d;
 
-/// @brief 
-/// @return 
-int main()
-{
-    cout << "OOP. Template for laboratory work #2.\n";
+    // Обчислення виразу без використання операцій множення та ділення
+    int result = (b << 10) + ((d << 4) + (a << 3)) - ((c << 12) + (c << 2)) + (d << 3);
 
-    char ch = '5';
-    do {
-        system("cls");
-        MenuTask();
-        ch = cin.get();
-        
-        cin.get();
-
-        switch (ch) {
-        case '1': task1();   break;
-        case '2': task1();   break;
-        case '3': task1();   break;
-        case '4': task1();   break;
-		case '5':  Examples(); break;
-		case '6': return 0;
-	    }
-        cout << " Press any key and enter\n";
-        ch = cin.get();
-    } while (ch != '6');
+    // Outputting the result
+    std::cout << "Result: " << result << std::endl;
 
     return 0;
 }
-
